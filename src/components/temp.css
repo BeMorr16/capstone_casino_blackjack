@@ -1,0 +1,92 @@
+.blackjackTopOuterContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 660px;
+    flex-grow: inherit;
+    background-image: url('/images/Bjtable.png');
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .blackjackCardSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+    gap: 30px;
+    margin-top: 2rem;
+    width: inherit;
+  }
+  
+  .BJDealerSection, .BJUserSection {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+  }
+  
+  .BJDealerSection {
+    top: 10rem;
+  }
+  .BJUserSection {
+    margin-bottom: 0;
+    margin-top: 3rem;
+  }
+  
+  .blackjackImages {
+    height: 100px;
+    width: auto;
+    margin-top: 5px;
+  }
+  
+  .BJsecondCard {
+    height: 110px;
+    width: 75px;
+    margin-top: 0;
+  }
+  .BJWinnerDisplay {
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: 20rem;
+  }
+  .blackjackTurnControls {
+    display: flex;
+    margin-top: 0;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .BJTurnContainer{
+    position: absolute;
+    bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .blackjackUserControls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 3rem;
+    left: 14rem;
+  }
+  .BJChipCount{
+    color: black;
+  }
+  .blackjackUserControls form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .blackjackUserControls div {
+    margin-top: 10px;
+  }
+  

@@ -69,7 +69,7 @@ function createDeck() {
 }
 
 function shuffle(deck) {
-    for (let i = 0; i < 3000; i++){
+    for (let i = 0; i < 50000; i++){
         let index1 = Math.floor((Math.random() * deck.length));
         let index2 = Math.floor((Math.random() * deck.length));
         let temp = deck[index1];

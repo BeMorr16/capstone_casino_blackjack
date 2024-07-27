@@ -13,11 +13,17 @@ export default function BJButton({ setBetAmount, num, chipCount }) {
                             type="button"
                             onClick={(e) => {
                                 const increment = parseInt(e.target.value, 10);
-                                setBetAmount((prev) => prev + increment);
+                                setBetAmount((prev) => {
+                                    if ((prev + increment) <= chipCount) {
+                                         return prev + increment
+                                    }
+                                    return prev
+                                });
                             }}
           value={num}
           disabled={num > chipCount + 1}
-                        >
+          className="chipButton"
+      >
                             {num}
                         </button>
   )
